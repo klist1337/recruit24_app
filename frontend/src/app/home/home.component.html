@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="tw-flex tw-justify-center">
+        <form [formGroup]="searchForm" class="searchBar" (ngSubmit)="onSearchSubmit()">
+            <input type="text" placeholder="Search Jobs" formControlName="searchValue">
+    </form>
+    </div>
+    <h1 class="tw-text-center">Job feed</h1>
+    <div class=" tw-mt-[100px] tw-flex tw-justify-center">
+        <div class="jobfeed">
+            <div class="card tw-mb-24" data-aos="fade-up" data-os-duration="1" *ngFor="let job of jobs; let i=index">
+                <p class="date">{{job.posting_date}}</p>
+                <a (click)="goToJobs(job)" class="job-title tw-text-start tw-mt-4 tw-ml-4">{{job.job_title}}</a>
+                <p class="employer tw-text-start  tw-ml-4" style="font-weight: 600;">{{job.employer}}</p>
+                <div class="tw-flex">
+                    <i class='bx bxs-business' style="margin-left: 13px;"></i> 
+                    <p class="country tw-text-start tw-ml-1 tw-mt-0.5">{{job.country_and_state}}</p>
+                </div>
+                
+                <i class="job-location tw-text-start tw-mt-2 tw-ml-4"><i class='bx bxs-map'></i> {{job.job_location}}</i>
+                <p class="job-description tw-text-center"> JOB DESCRIPTION</p>
+                <div class="description tw-text-start tw-mt-6 tw-ml-4" [innerHTML]="jobdescription[i]">
+                </div>
+                <a type="button" (click)="goToJobs(job)">See more</a>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>

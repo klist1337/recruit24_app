@@ -1,0 +1,111 @@
+.container {
+    font-family: "Noto sans";
+} 
+h1 {
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+input{
+    margin-top: 40px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 4px;
+    margin-bottom: 40px;
+    width: 300px;
+    height: 40px;
+    font-size: 22px;
+}
+
+input::placeholder {
+    text-align: center;
+    color: rgb(75, 75, 75);
+}
+
+.card {
+    margin-top: -70px;
+    width: 500px;
+    border-color: rgba(0, 0, 0, 0.496);
+    border-radius: 30px;
+    height: 300px;
+}
+
+.card:hover {
+    border-width: 2px;
+    border-color: #2557a7;
+    transition: 0.3s ease-in-out;
+}
+.bxs-business {
+    font-size: 24px;
+}
+.bxs-map {
+    font-size: 18px;
+}
+
+.job-title {
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.date {
+    font-size: 13px;
+    color:lightslategray;
+    margin-left: 310px;
+    margin-top: 2px;
+
+}
+.country {
+    font-size: 15px;
+}
+
+.job-location {
+    font-size: 16px;
+    font-weight: 400;
+}
+.job-description {
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+.description {
+    font-size: 14px;
+}
+
+.jobfeed a[type="button"]{
+    color: rgb(0, 0, 0); 
+    font-weight: 700;
+    font-size: 13px;
+    margin-left: 400px;
+}
+
+.jobfeed a:hover {
+    text-decoration: underline;
+    transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width:519px) {
+    .card {
+        width: 300px;
+        height: 310px;
+    }
+    .job-title {
+        font-size: 22px;
+    }
+    .job-description {
+        font-size: 12px;
+    }
+    .description {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .jobfeed a[type="button"]{
+        font-size: 12px;
+        margin-left: 200px;
+    }
+    .date {
+        margin-left: 80px;
+    }
+}

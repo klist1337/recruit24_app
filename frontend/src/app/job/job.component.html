@@ -1,0 +1,40 @@
+<div class="job-container tw-flex tw-justify-center">
+    <div class="card tw-h-screen">
+        <h1 class="job-title tw-text-start"> {{job.job_title}} </h1>
+        <i class="employer">{{job.employer}}</i>
+        <div>
+            <i class='bx bxs-business' style="margin-left: 10px;"></i>
+            <p class="country">{{job.country_and_state}}</p>
+        </div>
+        <div class="line"></div>
+        <div class="job-description">
+            <p class="location-text">Location</p>
+            <div class="location tw-flex">
+                <i class="bx bxs-map"></i>
+                <p>{{job.job_location}}</p>
+            </div>
+            <p class="line"></p>
+            <div class="full-job-description">
+                <p class="title">Full job description</p>
+                <p class="title-descrip">Company description:</p>
+                <p class="descrip"[innerHTML]="writeWithNewLine(job.company_description)"></p>
+                <p class="title-descrip">Responsabilities:</p>
+                <p class="descrip" [innerHTML]="writeWithNewLine(job.responsibilities)"></p>
+                <p class="title-descrip">Requirements for this Role:</p>
+                <p class="descrip" [innerHTML]="writeWithNewLine(job.requirements_for_role)"></p>
+                <div class="tw-flex">
+                    <p style="margin-top: 19px; margin-left: 20px;">Years require experience:</p>
+                    <p style="font-size: 15px; margin-top: 20px; margin-left: 15px; font-weight: bolder;">{{job.years_require_experience}}.</p>
+                </div>
+                <div class="tw-flex">
+                    <p style="margin-top: 19px; margin-left: 20px;">Year wages:</p>
+                    <p style="font-size: 15px; margin-top: 20px; margin-left: 15px; font-weight: bolder;">{{job.year_wages}}</p>
+                </div>
+                <div class="tw-flex">
+                    <p style="margin-top: 19px; margin-left: 20px;">Start date:</p>
+                    <p style="font-size: 15px; margin-top: 20px; margin-left: 15px; font-weight: bolder;">{{job.start_date}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

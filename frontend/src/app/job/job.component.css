@@ -1,0 +1,78 @@
+.card {
+    font-family: 'Noto sans';
+    width: 800px ;
+    margin-top: 40px;
+    border-color: rgba(68, 68, 68, 0.262);
+    overflow: auto;
+}
+
+.card:hover {
+    border-color: #2557a7;
+    border-width: 2px;
+}
+h1 {
+    margin-top: 8px;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+.line {
+    border-bottom: solid 1px rgb(220, 220, 220);
+    margin-top: 30px;
+}
+
+.employer {
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.bxs-business {
+    margin-top: 4px;
+    font-size: 30px;
+}
+
+.country {
+    margin-left: 45px;
+    margin-top: -28px;
+}
+
+.bxs-map {
+    font-size: 25px ;
+    margin-left: 10px;
+}
+
+.location-text {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.location {
+    margin-top: 10px;
+}
+
+.location p {
+    margin-left: 5px;
+}
+.title {
+    font-size: 22px;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-top: 20px ;
+}
+
+.title-descrip {
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.descrip {
+    margin-top: 7px;
+    font-size: 15px;
+    margin-left: 15px;
+}
