@@ -31,6 +31,12 @@ to change the user
 $  pg_restore -U domi -d postgres -F t /tmp/backup.tar
 ```
 
-## Launch the bac
+## Launch the Server
+
+install all dependencies
+
+```bash
+$ npm install
+```
 
 
