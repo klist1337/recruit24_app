@@ -4,7 +4,8 @@ Recruit app is  a multiple-client recruitment platform, where companies post pos
 
 first of all clone the app .. 
 ```bash
-$  git clone 
+$  git clone https://github.com/klist1337/recruit24_app.git
+```
 you have to push the dbfile in postgres, to do this u have to go in the backend file and
 run the postgresql container.
 
