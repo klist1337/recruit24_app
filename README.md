@@ -18,7 +18,7 @@ $ docker compose up -d
 ```
 Copy the database file inside the postgres container 
 ```bash
-$ docker cp ../backend.tar localdb:/tmp/backup/tar
+$ docker cp ../backup.tar localdb:/tmp/backup/tar
 ````
 Go inside the docker container: you can use docker desktop or you can do it the commande line
 ```bash
