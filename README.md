@@ -33,6 +33,11 @@ Push the database file inside the database
 ```bash
 $  pg_restore -U domi -d postgres -F t /tmp/backup.tar
 ```
+Quit inside the postgresql container
+```bash
+$  exit
+$  exit
+```
 
 ## Launch the Server
 
@@ -57,10 +62,15 @@ $ npm run start
 
 ## Launch app
 
+Install all dependencies
 ```bash
 $ cd frontend
+$ npm install
+```
+Build and run the app
+```bash
 $ ng build
 $ ng serve -c production
 ```
-See the app at localhost:4200 in your browser
+See the app running at localhost:4200 in your browser
 
