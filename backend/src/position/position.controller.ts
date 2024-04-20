@@ -9,11 +9,12 @@ export class PositionController {
 
     @Get('all')
     async getAll() {
-        const allData = await this.prisma.companydata.findMany({
-            orderBy: {
-                mytimestamp: 'asc',
+        const allData = await this.prisma.companydata.findMany(
+            {
+                orderBy: {
+                    mytimestamp:'desc',
+                }
             }
-        }
         );
         const sortedData = allData.sort((a , b) => {
             const dateA = this.parseData(a.posting_date);
@@ -29,9 +30,6 @@ export class PositionController {
             where: {
                 job_title: searchValue, 
             },
-            orderBy: {
-                mytimestamp: 'asc',
-            }
         });
         const sortedData = value.sort((a , b) => {
             const dateA = this.parseData(a.posting_date);

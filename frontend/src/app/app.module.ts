@@ -11,11 +11,10 @@ import { AddNewPostComponent } from './add-new-post/add-new-post.component';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { JobComponent } from './job/job.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
-
-
-
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatButtonModule} from '@angular/material/button';
+import { MatDialogModule} from '@angular/material/dialog';
+import { FormdialogComponent } from './formdialog/formdialog.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     AddNewPostComponent,
     JobComponent,
+    FormdialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,8 +32,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
-  providers: [provideHttpClient(withFetch())],
+  providers: [provideHttpClient(withFetch()), provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

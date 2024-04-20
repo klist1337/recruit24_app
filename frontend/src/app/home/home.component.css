@@ -48,7 +48,10 @@ input::placeholder {
     font-size: 25px;
     cursor: pointer;
 }
-
+.employer {
+    margin-left: 18px;
+    margin-top: 6px;
+}
 .date {
     font-size: 13px;
     color:lightslategray;
@@ -58,14 +61,17 @@ input::placeholder {
 }
 .country {
     font-size: 15px;
+    margin-left: 5px;
 }
 
 .job-location {
+    margin-top: -4px;
     font-size: 16px;
     font-weight: 400;
 }
 .job-description {
     font-size: 15px;
+    margin-top: 8px;
     font-weight: 700;
     margin-left: 40px;
 }
