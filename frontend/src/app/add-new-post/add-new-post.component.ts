@@ -15,6 +15,5 @@ export class AddNewPostComponent {
       result => console.log(`Dialog result: ${result}`)
     )
   }
-
 }
 

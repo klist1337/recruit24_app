@@ -45,7 +45,7 @@ export class PositionController {
                 data: {
                     employer: formData.companyName,
                     job_title:formData.jobTitle,
-                    country_and_state:formData.country_state,
+                    country_and_state:formData.country_State,
                     year_wages: formData.year_wages,
                     years_require_experience:formData.years_require_experience, 
                     job_description:formData.job_description,
